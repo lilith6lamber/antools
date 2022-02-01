@@ -1,0 +1,71 @@
+.join {
+    padding: 80px 0;
+
+    &_header {
+        text-align: center;
+        margin-bottom: 60px;
+        font-weight: 500;
+
+        &-title {
+            font-size: 48px;
+            line-height: 130%;
+        }
+
+        &-text {
+            max-width: 430px;
+            margin: 25px auto 0;
+        }
+    }
+
+    &_form {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+        @include Element;
+        padding: 30px;
+        gap: 15px 0;
+        border: 1.5px solid;
+        border-image-source: linear-gradient(90.89deg, rgba(255, 255, 255, 0.1) -1.67%, rgba(255, 255, 255, 0) 103.73%);
+
+        .field {
+            &::placeholder {
+                font-size: 14px;
+                line-height: 1;
+                color: rgba(255, 255, 255, 0.38);
+            }
+        }
+
+        .btn {
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .join {
+        padding: 120px 0;
+
+        &_form {
+            padding: 8px 12px 8px 25px;
+
+            .field {
+                flex-grow: 1;
+                padding-right: 30px;
+            }
+
+            .btn {
+                padding: 0 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .join {
+        padding: 250px 0;
+
+        &_header {
+            margin-bottom: 100px;
+        }
+    }
+}

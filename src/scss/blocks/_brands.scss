@@ -1,0 +1,90 @@
+.brands {
+    padding: 120px 0;
+
+    &_wrapper {
+        padding: 30px;
+        background: rgba(44, 53, 61, 0.2);
+        backdrop-filter: blur(50px);
+        border-radius: 25px;
+        border: 2px solid;
+        border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            left: -80px;
+            width: 160px;
+            height: 160px;
+            background: rgba(255, 72, 66, 0.4);
+            filter: blur(100px);
+        }
+    }
+
+    &_header {
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    &_list {
+        gap: 20px 0;
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .brands {
+        &_list {
+            &-item {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .brands {
+        &_header {
+            margin-bottom: 40px;
+        }
+
+        &_wrapper {
+            padding: 60px 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .brands {
+        padding: 200px 0;
+
+        &_header {
+            margin-bottom: 50px;
+        }
+
+        &_wrapper {
+            padding: 60px;
+        }
+
+        &_list {
+            gap: 0;
+
+            &-item {
+                width: fit-content;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .brands {
+        &_wrapper {
+            padding: 60px 80px;
+        }
+    }
+}
